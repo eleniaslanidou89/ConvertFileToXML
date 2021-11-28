@@ -14,10 +14,12 @@ P|Barack|Obama
 A|1600 Pennsylvania Avenue|Washington, D.C
 T|0768-7777777|08-77777";
 
-$arr = explode("\n", $input);
+
+$prearr = explode("\n", $input);
+$arr = preg_replace("/\r|\n/", "", $prearr); 
 $i = 0;
 foreach ($arr as $v) {
-    $arr[$i] = explode('|', $v);
+    $arr[$i] = explode('|', $v); 
     $i++;
 }
 
@@ -42,7 +44,7 @@ function generateXML($data)
     $usedA = false;
     $usedF = false;
     $PorF = '';
-    // $data = preg_replace("&#xD;", "", $data);
+    
     foreach ($data as $value) {
         if ($value[0][0] == 'P') {
             // $prevkey = $value[0][0];

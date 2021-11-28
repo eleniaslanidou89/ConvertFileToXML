@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<people>
+  <person>
+    <firstname>Carl Gustaf</firstname>
+    <lastname>Bernadotte</lastname>
+  </person>
+  <person>
+    <firstname>Carl some</firstname>
+    <lastname>something</lastname>
+    <phone>
+      <mobile>0768-101801</mobile>
+      <landlinenumber>08-101801</landlinenumber>
+    </phone>
+    <address>
+      <gata>Drottningholms slott</gata>
+      <stad>Stockholm</stad>
+      <postnummer>10001</postnummer>
+    </address>
+    <family>
+      <name>Victoria</name>
+      <born>1977</born>
+      <address>
+        <gata>Haga Slott</gata>
+        <stad>Stockholm</stad>
+        <postnummer>10002</postnummer>
+      </address>
+      <phone>
+        <mobile>0768-101801</mobile>
+        <landlinenumber>08-101801</landlinenumber>
+      </phone>
+    </family>
+  </person>
+  <person>
+    <firstname>Barack</firstname>
+    <lastname>Obama</lastname>
+    <address>
+      <gata>1600 Pennsylvania Avenue</gata>
+      <stad>Washington, D.C</stad>
+    </address>
+    <phone>
+      <mobile>0768-7777777</mobile>
+      <landlinenumber>08-77777</landlinenumber>
+    </phone>
+  </person>
+</people>
