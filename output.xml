@@ -3,10 +3,6 @@
   <person>
     <firstname>Carl Gustaf</firstname>
     <lastname>Bernadotte</lastname>
-  </person>
-  <person>
-    <firstname>Carl some</firstname>
-    <lastname>something</lastname>
     <phone>
       <mobile>0768-101801</mobile>
       <landlinenumber>08-101801</landlinenumber>
@@ -37,9 +33,5 @@
       <gata>1600 Pennsylvania Avenue</gata>
       <stad>Washington, D.C</stad>
     </address>
-    <phone>
-      <mobile>0768-7777777</mobile>
-      <landlinenumber>08-77777</landlinenumber>
-    </phone>
   </person>
 </people>

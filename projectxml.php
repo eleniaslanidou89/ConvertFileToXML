@@ -1,7 +1,5 @@
 <?php
-$input = "T|0768-101801|08-101801
-P|Carl Gustaf|Bernadotte
-P|Carl some|something
+$input = "P|Carl Gustaf|Bernadotte
 T|0768-101801|08-101801
 A|Drottningholms slott|Stockholm|10001
 T|0768-101801|08-101801
@@ -11,15 +9,13 @@ A|Haga Slott|Stockholm|10002
 F|Carl Philip|1979
 T|0768-101801|08-101801
 P|Barack|Obama
-A|1600 Pennsylvania Avenue|Washington, D.C
-T|0768-7777777|08-77777";
-
+A|1600 Pennsylvania Avenue|Washington, D.C";
 
 $prearr = explode("\n", $input);
-$arr = preg_replace("/\r|\n/", "", $prearr); 
+$arr = preg_replace("/\r|\n/", '', $prearr);
 $i = 0;
 foreach ($arr as $v) {
-    $arr[$i] = explode('|', $v); 
+    $arr[$i] = explode('|', $v);
     $i++;
 }
 
@@ -31,7 +27,6 @@ print_r($arr);
 function generateXML($data)
 {
     $name = 'output';
-    //$rowCount = count($data);
 
     //create the XML document
     $xmlDoc = new DOMDocument();
@@ -44,10 +39,9 @@ function generateXML($data)
     $usedA = false;
     $usedF = false;
     $PorF = '';
-    
+
     foreach ($data as $value) {
         if ($value[0][0] == 'P') {
-            // $prevkey = $value[0][0];
             $PorF = 'P';
             $usedP = true;
             $usedT = false;
